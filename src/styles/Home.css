@@ -1,16 +1,25 @@
 :root {
-	--foreground-img-size: 35%;
+	--foreground-img-size: 32vw;
 }
 
+.home-wrapper {
+	position: relative;
+	width: 100%;
+	height: fit-content;
+	overflow: hidden;
+}
+
+/**/
+
 .animated-background {
-	margin: 2.5%;
 	margin-top: 7%;
-	width: 75vw;
-	height: 75vh;
-	perspective: 1000px;
+	margin-left: 12%;
+	width: 79vw;
+	height: 79vh;
+	perspective: 3000px;
 	transform-style: preserve-3d;
-	animation: image-shift 10s 0.5s infinite alternate;
 	animation-timing-function: linear;
+	animation: image-shift 10s 0.5s infinite alternate;
 }
 
 .animated-background img {
@@ -19,37 +28,74 @@
 	display: block;
 }
 
-.floating-image {
+.floating-images {
 	position: absolute;
-
+	display: flex;
+	top: 0;
+	left: 0;
+	width: 35vw;
+	height: 20vh;
+	transform-style: preserve-3d;
 	width: var(--foreground-img-size);
-	height: var(--foreground-img-size);
+	height: auto;
+}
+
+.foreground-images img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
 
 .foregroundCoding {
-	top: 6%;
-	left: 9%;
-	transform: translateZ(50px);
+	transform: translate(9%, 18%) translateZ(50px);
 }
 
 .computer {
-	top: 24%;
-	left: 23%;
-	transform: translateZ(110px);
+	transform: translate(-35%, 85%) translateZ(125px);
 }
 
 .analysis {
-	top: 55%;
-	left: 35%;
-	transform: translateZ(75px);
+	transform: translate(-70%, 155%) translateZ(75px);
 }
 
 @keyframes image-shift {
 	0% {
-		transform: rotateX(25deg) rotateY(55deg) rotateZ(-15deg)
+		transform: rotateX(25deg) rotateY(75deg) rotateZ(-20deg)
 			translateZ(100px);
 	}
 	100% {
-		transform: rotateY(0deg) translateZ(-100px);
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(-100px);
 	}
 }
+
+@media (min-width: 1200px) {
+	:root {
+		--foreground-img-size: 30vw;
+	}
+}
+
+@media (min-width: 1400px) {
+	:root {
+		--foreground-img-size: 24vw;
+	}
+}
+
+/* Media Queries for different screen sizes 
+@media (max-width: 1200px) {
+	:root {
+		--foreground-img-size: 30vw;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--foreground-img-size: 30vw;
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		--foreground-img-size: 30vw;
+	}
+}
+*/

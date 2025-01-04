@@ -7,25 +7,19 @@ import analysis from "../assets/images/foreground/analysis.jpg";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="home-wrapper">
 			<pre className="basic-text"> Hello, I´m T-Al-D ! </pre>
 			<div className="animated-background">
 				<img src={programmingBackground} alt=""></img>
-				<img
-					src={foregroundCoding}
-					alt=""
-					className="floating-image foregroundCoding"
-				></img>
-				<img
-					src={analysis}
-					alt=""
-					className="floating-image analysis"
-				></img>
-				<img
-					src={computer}
-					alt=""
-					className="floating-image computer"
-				></img>
+				<div className="floating-images">
+					<img
+						src={foregroundCoding}
+						alt=""
+						className="foregroundCoding"
+					></img>
+					<img src={computer} alt="" className="computer"></img>
+					<img src={analysis} alt="" className="analysis"></img>
+				</div>
 			</div>
 		</div>
 	);
