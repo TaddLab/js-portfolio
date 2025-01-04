@@ -5,14 +5,12 @@
 .home-wrapper {
 	position: relative;
 	width: 100%;
-	height: fit-content;
+	height: 110%;
 	overflow: hidden;
 }
 
-/**/
-
 .animated-background {
-	margin-top: 7%;
+	margin-top: 6vh;
 	margin-left: 12%;
 	width: 79vw;
 	height: 79vh;
@@ -58,13 +56,28 @@
 	transform: translate(-70%, 155%) translateZ(75px);
 }
 
+/* Media Queries for different screen sizes */
 @keyframes image-shift {
 	0% {
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(-100px);
+	}
+	100% {
 		transform: rotateX(25deg) rotateY(75deg) rotateZ(-20deg)
 			translateZ(100px);
 	}
-	100% {
-		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(-100px);
+}
+
+@media (max-width: 500px) {
+	.foregroundCoding {
+		transform: translate(9%, 18%) translateZ(40px);
+	}
+
+	.computer {
+		transform: translate(-35%, 85%) translateZ(110px);
+	}
+
+	.analysis {
+		transform: translate(-70%, 155%) translateZ(70px);
 	}
 }
 
@@ -79,23 +92,3 @@
 		--foreground-img-size: 24vw;
 	}
 }
-
-/* Media Queries for different screen sizes 
-@media (max-width: 1200px) {
-	:root {
-		--foreground-img-size: 30vw;
-	}
-}
-
-@media (max-width: 768px) {
-	:root {
-		--foreground-img-size: 30vw;
-	}
-}
-
-@media (max-width: 480px) {
-	:root {
-		--foreground-img-size: 30vw;
-	}
-}
-*/
