@@ -63,7 +63,7 @@
 	}
 	100% {
 		transform: rotateX(25deg) rotateY(75deg) rotateZ(-20deg)
-			translateZ(100px);
+			translateX(-200px) translateZ(100px);
 	}
 }
 
