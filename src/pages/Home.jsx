@@ -8,7 +8,7 @@ import analysis from "../assets/images/foreground/analysis.jpg";
 export default function Home() {
 	return (
 		<div className="home-wrapper">
-			<pre className="basic-text"> Hello, I´m T-Al-D ! </pre>
+			<pre className="basic-text"> Hello, I´m Tadd ! </pre>
 			<div className="animated-background">
 				<img src={programmingBackground} alt=""></img>
 				<div className="floating-images">
