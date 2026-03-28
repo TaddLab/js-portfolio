@@ -9,11 +9,11 @@ export default function Footer() {
 			<span>
 				<Link
 					className="footer-link"
-					to="https://github.com/T-Al-D/js-portfolio"
+					to="https://github.com/TaddLab/js-portfolio"
 				>
 					<FaCode className="footer-icon" />
 				</Link>
-				<Link className="footer-link" to="https://github.com/T-Al-D">
+				<Link className="footer-link" to="https://github.com/TaddLab">
 					<FaGithub className="footer-icon" />
 				</Link>
 			</span>
