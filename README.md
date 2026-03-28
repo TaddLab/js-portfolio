@@ -1,10 +1,8 @@
 # js-portfolio
 
-[![pages-build-deployment](https://github.com/T-Al-D/js-portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/T-Al-D/js-portfolio/actions/workflows/pages/pages-build-deployment)
-
 Icon made with Pixilart: https://www.pixilart.com/
 
-## Webpage here: https://t-al-d.github.io/js-portfolio/
+## Webpage here: https://taddlab.github.io/js-portfolio/
 
 -> npm run deploy to publish the frontend
 
